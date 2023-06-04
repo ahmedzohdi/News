@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  margin: 5px 0;
 }
 
 .links {
@@ -14,9 +15,14 @@
     display: none;
   }
 }
-.links h4 {
+.links a {
   margin: 0 15px;
   color: hsl(236, 13%, 42%);
+  text-decoration: none;
+  font-weight: bold;
+}
+.links a:hover {
+  color: hsl(240, 100%, 5%);
 }
 .links div {
   width: 30%;
@@ -40,12 +46,19 @@
 }
 
 .menu {
+  display: none;
   width: 25%;
   height: 100vh;
   background-color: white;
   position: fixed;
   bottom: 0;
   right: 0;
+  box-shadow: 0 0 20px 0px black;
+}
+@media only screen and (max-width: 1030px) {
+  .menu {
+    display: block;
+  }
 }
 
 .menu-content {
@@ -62,4 +75,15 @@
 }
 .menu-links {
   margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-links a {
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(236, 13%, 42%);
+}
+.menu-links a:hover {
+  color: hsl(240, 100%, 5%);
 }

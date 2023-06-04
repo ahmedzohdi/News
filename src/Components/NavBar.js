@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../Images/logo.svg";
 import menu from "../Images/icon-menu.svg";
 import close from "../Images/icon-menu-close.svg";
@@ -11,8 +12,7 @@ const NavBar = () => {
       <img src={logo} alt="" />
       <div className={classes.links}>
         <div>
-          <h4>Home</h4>
-          <h4>News</h4>
+          <Link to="/">Home</Link>
         </div>
       </div>
       <div className={classes["open-menu"]}>
@@ -37,8 +37,7 @@ const NavBar = () => {
               />
             </div>
             <div className={classes["menu-links"]}>
-              <h4>Home</h4>
-              <h4>News</h4>
+              <Link to="/">Home</Link>
             </div>
           </div>
         </div>

@@ -57,6 +57,12 @@
   color: white;
   border: none;
   margin-top: 30px;
+  cursor: pointer;
+}
+.details button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 .new {
@@ -127,4 +133,11 @@ p {
   .news-info {
     width: 50%;
   }
+}
+
+.future-of-web {
+  margin-top: 50px;
+}
+.future-of-web p {
+  margin: 20px 0;
 }

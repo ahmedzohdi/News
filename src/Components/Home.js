@@ -1,5 +1,6 @@
 import future from "../Images/image-web-3-desktop.jpg";
 import NewsCard from "./NewsCard";
+import { Link } from "react-router-dom";
 import classes from "./Home.module.css";
 
 const Home = () => {
@@ -16,7 +17,10 @@ const Home = () => {
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button>READ MORE</button>
+
+              <Link to="/future-of-web">
+                <button>READ MORE</button>
+              </Link>
             </div>
           </div>
         </div>
